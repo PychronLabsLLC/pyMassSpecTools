@@ -23,10 +23,10 @@ from sqlalchemy.sql.expression import func, distinct
 from traits.api import provides
 from uncertainties import std_dev, nominal_value
 
-from pychron.database.core.database_adapter import DatabaseAdapter
-from pychron.database.core.functions import delete_one
+from mst.database.core.database_adapter import DatabaseAdapter
+from mst.database.core.functions import delete_one
 from pychron.entry.iimport_source import IImportSource
-from pychron.mass_spec.database.massspec_orm import (
+from mst.mass_spec.database.massspec_orm import (
     IsotopeResultsTable,
     AnalysesChangeableItemsTable,
     BaselinesTable,
@@ -54,7 +54,7 @@ from pychron.mass_spec.database.massspec_orm import (
     MaterialTable,
     PDPTable,
 )
-from pychron.pychron_constants import INTERFERENCE_KEYS
+from mst.constants import INTERFERENCE_KEYS
 
 
 class MissingAliquotPychronException(BaseException):
