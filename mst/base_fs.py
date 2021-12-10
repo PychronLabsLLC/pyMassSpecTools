@@ -45,7 +45,7 @@ class BaseFS(HasTraits):
     def _file_dialog(self, action, **kw):
         """ """
         if "default_directory" not in kw:
-            kw["default_directory"] = os.path.expanduser('~')
+            kw["default_directory"] = os.path.expanduser("~")
 
         dlg = FileDialog(action=action, **kw)
         if dlg.open() == OK:

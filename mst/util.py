@@ -37,7 +37,6 @@ class CSVHeader:
 
 
 class XLSHeader(CSVHeader):
-
     def get(self, row, key, cast=None):
         if cast is None:
             cast = str
