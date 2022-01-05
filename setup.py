@@ -31,13 +31,13 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    # install_requires=["Click", "pyyaml"],
-    # entry_points={
-    #     "console_scripts": [
-    #         "pcm = pcm.cli:cli",
-    #     ],
-    # },
-    packages=["pcm"],
+    install_requires=["Click", "pyyaml"],
+    entry_points={
+        "console_scripts": [
+            "mst = mst.cli:cli",
+        ],
+    },
+    packages=["mst"],
     python_requires=">=3.6",
     include_package_data=True,
     # package_data={
