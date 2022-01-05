@@ -1,6 +1,5 @@
-
 def welcome():
-    print('welcome to pyMassSpecTools')
+    print("welcome to pyMassSpecTools")
 
 
 def cli():
